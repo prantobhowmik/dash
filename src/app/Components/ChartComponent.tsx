@@ -5,7 +5,7 @@ import { Doughnut } from 'react-chartjs-2';
 
 
 
-const ChartComponent = ({  labels , data}) => {
+const ChartComponent: React.FC<{ data: string; labels: string; }> = ({  labels , data}) => {
   const chartData = {
     labels: labels,
     datasets: [

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Eval = ({onClick}) => {
+const Eval: React.FC<{  onClick: () => void; }> = ({onClick}) => {
   return (
     <div className=' pb-10 '>
         <div className=' border-[1px] border-gray-400 rounded-lg'>
