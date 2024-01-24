@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card3V = ({ title, description, description1, buttonText, buttonText1, onClick }) => {
+const Card3V: React.FC<{ title: string; onClick: () => void;description1:string; buttonText1:string; description: string; buttonText:string }> = ({ title, description, description1, buttonText, buttonText1, onClick }) => {
   return (
     <div className=" max-w-screen-lg rounded-lg overflow-hidden border-[1px] border-slate-400 bg-slate-200">
       <div className="p-10 max-w-sm">
