@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HtmlE = ({onClick}) => {
+const HtmlE: React.FC<{  onClick: () => void; }> = ({onClick}) => {
   return (
         <div className=' border-[1px] border-gray-400 rounded-lg -mt-10'>
             <div >

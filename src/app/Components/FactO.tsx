@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FactO = ({nameF, para1, para2, para3}) => {
+const FactO: React.FC<{ nameF: string; para3: string; para1: string; para2:string }>  = ({nameF, para1, para2, para3}) => {
   return (
     <div className='p-5 bg-[#956f00] border-[1px] h-96 rounded-lg text-white pr-10'>
         <div className=' mb-10 '>
