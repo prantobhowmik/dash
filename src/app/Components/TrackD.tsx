@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TrackD = ({titT, DesT, Orders, orderCount, Track, trackCount}) => {
+const TrackD: React.FC<{ titT: string; Track: string; DesT: string; orderCount:string; Orders:string; trackCount:string}> = ({titT, DesT, Orders, orderCount, Track, trackCount}) => {
   return (
     <div>
         <div className='p-5 pr-1 max-w rounded-lg m-10 h-96 bg-white border-[1px] border-yellow-300'>

@@ -6,7 +6,7 @@ import Chart from 'chart.js/auto';
 
 Chart.register();
 
-const ShipD = ({nameC, totalOrder, onClick}) => {
+const ShipD: React.FC<{ nameC: string; onClick: () => void; totalOrder: string;  }> = ({nameC, totalOrder, onClick}) => {
 
 
   const chartData = [117.6, 78.8, 78.8, 78.8, 40];
