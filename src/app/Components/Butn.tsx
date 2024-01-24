@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Butn = ({btnTxt, onClick}) => {
+const Butn: React.FC<{ btnTxt: string; onClick: () => void }> = ({btnTxt, onClick}) => {
   return (
     <div>
         <div >
