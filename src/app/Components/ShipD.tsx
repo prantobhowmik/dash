@@ -43,7 +43,7 @@ const ShipD: React.FC<{ nameC: string; onClick: () => void; totalOrder: string; 
             
         </div>
         <div className='items-center flex justify-center pt-5'>
-        <ChartComponent  labels={chartLabels} data={chartData}  />
+        <ChartComponent  labels={chartLabels as any} data={chartData as any}  />
         </div>
         
       </div>

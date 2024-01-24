@@ -6,7 +6,7 @@ import { Doughnut } from 'react-chartjs-2';
 
 
 const ChartComponent: React.FC<{ data: string; labels: string; }> = ({  labels , data}) => {
-  const chartData = {
+  const chartData  = {
     labels: labels,
     datasets: [
       {
@@ -31,7 +31,7 @@ const ChartComponent: React.FC<{ data: string; labels: string; }> = ({  labels ,
 
   return (
     <div className='w-2/4 '>
-      <Doughnut data={chartData} options ={chartOptions}/>
+      <Doughnut data={chartData as any} options ={chartOptions as any}/>
     </div>
   );
 };
