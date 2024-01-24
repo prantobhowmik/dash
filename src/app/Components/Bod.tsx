@@ -3,7 +3,7 @@ import React from 'react'
 
   
 
- const Bod = ({buttonText, onClick}) => {
+ const Bod: React.FC<{ buttonText: string; onClick: () => void }> = ({buttonText, onClick}) => {
   return (
     <div>
         <div>
